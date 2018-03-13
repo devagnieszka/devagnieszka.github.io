@@ -14,6 +14,22 @@
       }
     }
   });
+  
+    $('a.js-scroll-trigger-btn[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: (target.offset().top - 70)
+        }, 1000, "easeInOutExpo");
+        return true;
+      }
+    }
+  });
+  
+  
+ 
 
   // Scroll to top button appear
   $(document).scroll(function() {
@@ -50,12 +66,19 @@
   $(window).scroll(navbarCollapse);
 
   // Modal popup$(function () {
-  $('.portfolio-item').magnificPopup({
+  $('.portfolio-item' ).magnificPopup({
     type: 'inline',
+	gallery:{
+    enabled:true
+    },
     preloader: false,
     focus: '#username',
     modal: true
   });
+  
+  
+
+  
   $(document).on('click', '.portfolio-modal-dismiss', function(e) {
     e.preventDefault();
     $.magnificPopup.close();
@@ -72,4 +95,7 @@
     });
   });
 
+  
+  
+  
 })(jQuery); // End of use strict
