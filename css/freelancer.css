@@ -169,9 +169,10 @@ section h2 {
 }
 
 header.masthead {
-
+  padding-top: calc(6rem + 72px);
+  padding-bottom: 6rem;
 letter-spacing: .3em ;
-   background: url("../img/header.jpg") no-repeat center center fixed; 
+   background: url("../img/header.png") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
