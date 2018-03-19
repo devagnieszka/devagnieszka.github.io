@@ -169,8 +169,8 @@ section h2 {
 }
 
 header.masthead {
-  padding-top: calc(6rem + 72px);
-  padding-bottom: 6rem;
+  padding-top: 168px;
+  padding-bottom: 18px;
 letter-spacing: .3em ;
    background: url("../img/header.png") no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -379,12 +379,12 @@ a:focus, a:hover, a:active {
 }
 
 
-.btn-primary {
+.btn-primary, .btn-primary:focus{
   background-color: #7f2620;
   border-color: #7f2620;
 }
 
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active{
+.btn-primary:hover,  .btn-primary:active{
   background-color: #7f2620;
   border-color: #7f2620;
   color: #FFFFFF;
@@ -424,4 +424,11 @@ a:focus, a:hover, a:active {
 .bg-grey {
   background-color: #eeeae7 !important;
 }
+
+.container-center {
+display: flex;
+align-items: center;
+
+}
+
 }
